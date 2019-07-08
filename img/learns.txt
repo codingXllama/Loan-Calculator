@@ -1,0 +1,3 @@
+<div class="container">
+// a container in bootstrap adds margin to the middle, and margin auto (so we can have margins on the sides)
+</div>
