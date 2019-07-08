@@ -1,3 +1,8 @@
 <div class="container">
 // a container in bootstrap adds margin to the middle, and margin auto (so we can have margins on the sides)
 </div>
+
+
+class="btn btn-dark btn-block"
+Meaning: in bootstrap, btn-dark means making the button dark
+                       btn-block means making the button go as wide as the UI 

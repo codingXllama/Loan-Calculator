@@ -27,7 +27,8 @@
                             <div class="input-group">
                                 <!-- adding a background on the $ sign-->
                                 <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" id="amount" placeholder="Loan Amount">
+                                <input type="number" class="form-control" id="amount" placeholder="Loan Amount"
+                                    required>
                             </div>
                         </div>
                         <!-- Creating the interest field -->
@@ -35,19 +36,59 @@
                             <div class="input-group">
                                 <!-- adding a background on the % sign -->
                                 <span class="input-group-text">%</span>
-                                <input type="text" class="form-control" id="interest" placeholder="interest">
+                                <input type="text" class="form-control" id="interest" placeholder="interest" required>
                             </div>
                         </div>
 
                         <!-- Creating the input field for years to repay -->
                         <div class="form-group">
-                            <input type="text" class="form-control" id="years" placeholder="Years to repay">
+                            <input type="text" class="form-control" id="years" placeholder="Years to repay" required>
 
                         </div>
 
                         <!-- Creating the submit button -->
-
+                        <div class="form-group">
+                            <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                        </div>
                     </form>
+
+                    <!-- CREATING THE LOADER -->
+                    <div id="loading">
+                        <!-- <img src="/img/loading.gif" alt=""> -->
+                    </div>
+                    <!-- RESULTS IS PLACED HERE -->
+                    <div class="results" class="pt-4">
+                        <h5>Results</h5>
+                        <div class="form-group">
+                            <!-- Creating the RESULTS field -->
+                            <div class="input-group">
+                                <!-- adding a background on the Monlty Payment sign-->
+                                <span class="input-group-text">Monthly Payment: </span>
+                                <!-- making the place holder to be disabled becuase it's the output field, we don't want the user to change it -->
+                                <input type="number" class="form-control" id="monthly-payment" disabled>
+                            </div>
+                        </div>
+
+                        <!-- CREATING THE TOTAL PAYMENT RESULT OUTPUT -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <!-- adding a background on the Monlty Payment sign-->
+                                <span class="input-group-text">Total Payment: </span>
+                                <!-- making the place holder to be disabled becuase it's the output field, we don't want the user to change it -->
+                                <input type="number" class="form-control" id="total-payment" disabled>
+                            </div>
+                        </div>
+
+                        <!-- CREATING THE TOTAL INTEREST RESULT OUTPUT -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <!-- adding a background on the Monlty Payment sign-->
+                                <span class="input-group-text">Total Interest: </span>
+                                <!-- making the place holder to be disabled becuase it's the output field, we don't want the user to change it -->
+                                <input type="number" class="form-control" id="total-interest" disabled>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,6 +114,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="/app.js"></script>
 </body>
 
 </html>
