@@ -37,8 +37,21 @@ function calculatedResults() {
         totalPaymentUI_input.value = (monthly * calculatedPayments).toFixed(2);
         totalInterestUI_input.value = ((monthly * calculatedPayments) - principal).toFixed(2);
     } else {
-        alert("There is an error, please check your input");
+        showError('Please check your numbers');
     }
 
     e.preventDefault();
+}
+
+
+//Show Error
+function showError(error) {
+    //creating a div
+    const errorDIV = document.createElement('div');
+
+    // Adding alert class to the divElement
+    errorDIV.className = 'alert alert-danger';
+
+    // Creating the text node and append it to the div
+    errorDIV.appendChild(Document.createTextNode(error));
 }

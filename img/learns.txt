@@ -6,3 +6,8 @@
 class="btn btn-dark btn-block"
 Meaning: in bootstrap, btn-dark means making the button dark
                        btn-block means making the button go as wide as the UI 
+
+
+
+In bootstrap to create an alert, you must give the class alert and alert-danger.
+The alert-danger class will make the alert be red.
